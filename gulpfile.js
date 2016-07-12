@@ -6,7 +6,7 @@ var gulp   = require('gulp'),
     browserSync = require('browser-sync').create();
 
 // define the default task and add the watch task to it
-gulp.task('default', ['watch', 'build-css']);
+gulp.task('default', ['watch', 'build-css', 'jshint']);
 
 // configure the jshint task
 gulp.task('jshint', function() {
